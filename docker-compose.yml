@@ -12,3 +12,18 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+
+  url_shortener_db:
+    image: postgres:17-alpine
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+    container_name: url_shortener_db
+    volumes:
+      - ~/apps/url_shortener_db:/var/lib/posgresql/data
+    ports:
+      - "4001:4001"
+    expose:
+      - "4001"
+    command: -p 4001
