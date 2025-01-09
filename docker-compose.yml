@@ -1,0 +1,14 @@
+services:
+
+  url_shortener_backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: url_shortener_backend
+    ports:
+      - "4000:4000"
+    expose:
+      - "4000"
+    volumes:
+      - .:/app
+      - /app/node_modules

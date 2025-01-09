@@ -1,3 +1,4 @@
 *.yml
 package-lock.json
 package.json
+*.md
