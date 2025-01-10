@@ -23,19 +23,23 @@
     "release:major": "standard-version --release-as major",
     "release:patch": "standard-version --release-as patch",
     "prepare": "husky install",
-		"migration:make": "npx knex migrate:make",
-		"migration:latest": "npx knex migrate:latest",
-		"migration:rollback": "npx knex migrate:rollback",
-		"seed:make": "npx knex seed:make",
-		"seed:run": "npx knex seed:run"
+    "migration:make": "npx knex migrate:make",
+    "migration:latest": "npx knex migrate:latest",
+    "migration:rollback": "npx knex migrate:rollback",
+    "seed:make": "npx knex seed:make",
+    "seed:run": "npx knex seed:run"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.3.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^8.1.0",
     "@types/pg": "^8.11.10",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
     "knex": "^3.1.0",
+    "nanoid": "^3.3.8",
     "pg": "^8.13.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"

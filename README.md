@@ -3,6 +3,7 @@
 - [How to start the project](#how-to-start-the-project)
 - [How to commit according to Conventional Commits](#how-to-commit-according-to-conventional-commits)
 - [Migrations and Seeds](#migrations-and-seeds)
+- [Swagger API docs](#swagger-api-docs)
 # Clone the project
 
 ```bash
@@ -266,3 +267,9 @@ npm run seed:make name_of_seed
 ```bash
 npm run seed:run
 ```
+
+# Swagger API docs
+
+Api documentation for dev env is available when project is running on [LINK](http://localhost:4000/api-docs#/)
+
+In prod or test use `/api-docs` path with URL
